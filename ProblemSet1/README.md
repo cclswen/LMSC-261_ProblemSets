@@ -1,3 +1,3 @@
 # LMSC-261_Problem sets
-# Algorithm Overview (description of the pseudocode)
+# Algorithm Description (pseudocode)
 *This algorithm is searching for a specific name* **"Smith"** in a phone book using the binary search method, which repeatedly divides the remaining pages in half and to quickly narrow down the search. It starts by checking the *middle page* - if **"Smith"** is found, it calls **Mike**; if not, it *eliminates the half of the book* where **"Smith"** can't be and repeats the process with the remaining half. If the name *isn't found* after checking all possible pages, the algorithm simply **stops**. This method is much faster than checking every page individually as it dramatically reduces the number of pages needed to search by half each time.
