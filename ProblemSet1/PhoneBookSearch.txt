@@ -1,0 +1,13 @@
+pick up phone book
+open to middle of phone book
+look at names
+if Smith is among names
+    call Mike
+else if Smith is earlier in book
+    open to middle of left half of book
+    go back to step 2
+else if Smith is later in book
+    open to middle of right half of book
+    go back to step 2
+else
+    quit
