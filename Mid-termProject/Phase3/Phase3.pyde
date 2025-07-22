@@ -8,7 +8,7 @@ def draw():
     # original size at top-left
     drawObject(0, 0, 1)
 
-    # scaled and moved version in bottom-right
+    # scaled and moved version in bottom right
     drawObject(200, 125, 0.5)
 
 def drawObject(x, y, s):
@@ -46,3 +46,11 @@ def drawObject(x, y, s):
     ellipse(137.5, 279, 29, 28)
 
     pop() 
+    
+    
+    
+    
+    
+    
+    
+    

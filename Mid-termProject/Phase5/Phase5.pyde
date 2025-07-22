@@ -7,25 +7,25 @@ def draw():
     background(237, 50, 55)
 
     grid_size = 10 
-    cell_w = width / float(grid_size)
-    cell_h = height / float(grid_size)
+    cell_w = width / float
+    cell_h = height / float
 
     object_base_size = 280  
     scale_factor = cell_w / object_base_size
 
-    for i in range(grid_size):
-        for j in range(grid_size):
-            x = i * cell_w
-            y = j * cell_h
+    for i in range:
+    for j in range:
+    x = i * cell_w
+    y = j * cell_h
 
-            # Wavy motion
-            offset_y = 10 * sin(radians(frameCount * 4 + i * 30))
+    # Wavy motion
+    offset_y = 10 * sin(radians(frameCount * 4 + i * 30))
 
-            push()
-            translate(x, y + offset_y)
-            scale(scale_factor)
-            drawObject(0, 0, 1)
-            pop()
+    push()
+    translate(x, y + offset_y)
+    scale(scale_factor)
+    drawObject(0, 0, 1)
+    pop()
 
 def drawObject(x, y, s):
     push()
@@ -55,3 +55,8 @@ def drawObject(x, y, s):
     ellipse(137.5, 279, 29, 28)
 
     pop()
+    
+    
+    
+    
+    

@@ -35,3 +35,12 @@ def draw():
     
     # Ellipse 2: Right rounded end
     ellipse(137.5, 279, 29, 28) 
+    
+    
+    
+    
+    
+    
+    
+    
+    

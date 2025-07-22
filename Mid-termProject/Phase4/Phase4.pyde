@@ -14,10 +14,10 @@ def draw():
     scale_factor = cell_w / object_base_size
 
     for i in range(grid_size):
-        for j in range(grid_size):
-            x = i * cell_w
-            y = j * cell_h
-            drawObject(x, y, scale_factor)
+for j in range(grid_size):
+    x = i * cell_w
+    y = j * cell_h
+    drawObject(x, y, scale_factor)
 
 def drawObject(x, y, s):
     push()
@@ -47,3 +47,10 @@ def drawObject(x, y, s):
     ellipse(137.5, 279, 29, 28)
 
     pop()
+    
+    
+    
+    
+    
+    
+    
