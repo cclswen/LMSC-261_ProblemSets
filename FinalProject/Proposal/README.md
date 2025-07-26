@@ -38,5 +38,3 @@ Not combining with another course.
 ## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research?
 
 My next steps are to learn more and get in depth into both Tone.js and p5.js. I need to learn how to trigger synth notes and adjust audio parameters in Tone.js, and how to use p5.js’s sound analysis tools to draw visuals that react to sound in real time. I’ll begin by creating small prototypes that separate audio and visuals and then combine them into a single app. I’ll also explore examples of audio-reactive visuals to inspire my visual designs. Additional skills include working with modular JavaScript, responsive UI design. Once the base app is working, I plan to explore more creative visual modes and document how this browser project could turn into a plugin-based tool in the future.
-
-<img width="451" height="693" alt="image" src="https://github.com/user-attachments/assets/99660724-54fc-4837-9fdd-bbdff15bc3f3" />
