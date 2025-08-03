@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Search Berklee.edu</title>
+    <!-- Page title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cece | Portfolio</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Berklee.edu</h1>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header section with name and navigation -->
+        <header>
+            <!-- Main heading -->
+            <h1>CECE</h1>
+            
+            <!-- Main navigation menu -->
+            <nav class="main-nav">
+                <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="events.html">Events</a></li>
+                 <li><a href="arts.html">Arts</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <form action="https://college.berklee.edu/search/google" method="get">
-    <label for="search">Enter:</label>
-    <input type="text" id="search" name="keys" required>
-    <input type="submit" value="Search">
-  </form>
+        <!-- Main content area -->
+        <main>
+       <!-- Images -->
+            <section class="links">
+          <img src="images/IMG_1448.jpg" alt="CC" class="links-image">
+          <img id="random-image" src="images/IMG_4436 3.jpg" alt="CC" class="links-image">
 
+            <!-- Section containing external links -->
+            <section class="links-section">
+                <!-- Social/contact links -->
+                <h2>CONNECT</h2>
+                <ul class="links-list">
+                    <ul><a href="mailto:cclswen.com">Email</a></ul>
+                    <li><a href="tel:8573813820">Contact Number</a></li>
+                </ul>
+            </section>
+
+            <!-- Theme selector dropdown -->
+            <section class="theme-selector">
+                <select id="color-theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="color">Color</option>
+                </select>
+            </section>
+        </main>
+
+        <!-- Footer with copyright -->
+        <footer>
+            <p>© cc/twenty0twentyfive</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
