@@ -9,9 +9,3 @@ An interactive audio-visual synthesizer with aurora borealis-inspired visuals.
 - Physics-based visual particles
 - Aurora borealis background effect
 - Colorcoded notes
-
-## Installation
-1. Clone this repository
-2. Install dependencies:
-```bash
-npm install
