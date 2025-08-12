@@ -1,0 +1,183 @@
+/* Main Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#visual-container {
+    flex: 1;
+    position: relative;
+}
+
+/* Initialization Overlay */
+.init-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.init-overlay h2 {
+    margin-bottom: 10px;
+}
+
+/* Controls Section */
+.controls {
+    padding: 20px;
+    background: #111;
+    border-top: 1px solid #333;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Keyboard Buttons */
+.key-btn {
+    padding: 10px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.key-btn.active {
+    background: #555;
+}
+/* Add these to your existing styles */
+
+/* Visual effects */
+.audio-particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+    animation: float 5s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -150%) scale(0.5); opacity: 0; }
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    animation: ripple 2s forwards;
+}
+
+@keyframes ripple {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(5); opacity: 0; }
+}
+
+.note-visual {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.8;
+    animation: float-up 4s forwards;
+}
+
+@keyframes float-up {
+    0% { transform: translate(-50%, 0) scale(1); opacity: 0.8; }
+    100% { transform: translate(-50%, -100vh) scale(0.5); opacity: 0; }
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid;
+    background: transparent !important;
+}
+
+.hexagon {
+    width: 30px;
+    height: 17.32px;
+    background: currentColor;
+    position: relative;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 8.66px solid currentColor;
+}
+
+.hexagon:after {
+    top: 100%;
+    border-top: 8.66px solid currentColor;
+}
+
+.star {
+    width: 0;
+    height: 0;
+    position: relative;
+    display: block;
+    color: currentColor;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid currentColor;
+    border-left: 15px solid transparent;
+    transform: rotate(35deg);
+}
+
+.star:before,
+.star:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: currentColor;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid currentColor;
+    border-left: 15px solid transparent;
+    transform: rotate(-70deg);
+}
+
+.star:after {
+    transform: rotate(70deg);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div id="visual-container">
+            <div id="init-overlay" class="init-overlay">
+                <div>
+                    <h2>CLICK TO START SYNTHESIZER</h2>
+                    <p id="init-status">Initializing...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div id="key-status">Press keys A-K to play</div>
+            <div class="keyboard">
+                <button class="key-btn" data-note="C4">A (C4)</button>
+                <button class="key-btn" data-note="D4">S (D4)</button>
+                <button class="key-btn" data-note="E4">D (E4)</button>
+                <button class="key-btn" data-note="F4">F (F4)</button>
+                <button class="key-btn" data-note="G4">G (G4)</button>
+                <button class="key-btn" data-note="A4">H (A4)</button>
+                <button class="key-btn" data-note="B4">J (B4)</button>
+                <button class="key-btn" data-note="C5">K (C5)</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
