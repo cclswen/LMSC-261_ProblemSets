@@ -1,6 +1,6 @@
 # Aurora Wave Synth
 
-An interactive audio-visual synthesizer with aurora borealis-inspired visuals.
+An interactive audio-visual synthesizer
 
 ## Features
 - Play musical notes with keyboard keys (A-K)
